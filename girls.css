@@ -1,0 +1,37 @@
+/* Girls Page Specific Styles */
+body {
+    padding-top: 80px;
+    background-color: #fff;
+}
+
+/* Header */
+.girls-header {
+    background-color: #f5e1f7;
+    background-image: url('../images/girls-bg.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+/* Product Cards */
+.girls-products .product-card {
+    border: 1px solid #f0f0f0;
+    transition: all 0.3s ease;
+    background-color: #fff;
+}
+
+.girls-products .product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+
+/* Feature Section */
+.girls-feature {
+    background-color: #faf5fb !important;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .girls-header {
+        min-height: 300px;
+    }
+}

@@ -1,0 +1,19 @@
+/* Collection Header - used by all collection pages */
+.collection-header {
+    background-color: #f9f9f9;
+    background-image: url('https://via.placeholder.com/2000x800');
+    background-size: cover;
+    background-position: center;
+    padding-bottom: 60px;
+}
+
+/* Product Cards - used by all collection pages */
+.product-card {
+    border: 1px solid #f0f0f0;
+    transition: all 0.3s ease;
+}
+
+/* You could add specific boys styles like: */
+.boys-hero {
+    background-color: #e3f2fd; /* Light blue background for boys */
+}

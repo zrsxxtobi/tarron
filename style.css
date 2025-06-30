@@ -1,0 +1,97 @@
+/* Custom Styles */
+:root {
+    --bs-body-font-family: 'Helvetica Neue', Arial, sans-serif;
+}
+
+body {
+    padding-top: 80px;
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+/* Navigation */
+.navbar {
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.navbar-brand {
+    letter-spacing: 1px;
+}
+
+.nav-link {
+    padding: 0.5rem 1rem;
+    font-weight: 300;
+    letter-spacing: 0.5px;
+}
+
+/* Hero Section */
+.hero {
+    background-color: #f9f9f9;
+    background-image: url('https://via.placeholder.com/2000x1000');
+    background-size: cover;
+    background-position: center;
+}
+
+/* Collection Cards */
+.collection-card {
+    transition: transform 0.3s ease;
+}
+
+.collection-card:hover {
+    transform: translateY(-5px);
+}
+
+.collection-card img {
+    transition: opacity 0.3s ease;
+}
+
+.collection-card:hover img {
+    opacity: 0.9;
+}
+
+/* Product Cards */
+.product-card {
+    border: 1px solid pink;
+    transition: all 0.3s ease;
+}
+
+.product-card:hover {
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+
+/* Collection Header */
+.collection-header {
+    background-color: #f9f9f9;
+    background-image: url('https://via.placeholder.com/2000x800');
+    background-size: cover;
+    background-position: center;
+    padding-bottom: 60px;
+}
+
+/* Text Styles */
+.display-4, .display-5 {
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+
+/* Buttons */
+.btn-outline-dark {
+    border-width: 2px;
+    letter-spacing: 1px;
+    padding: 8px 24px;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    body {
+        padding-top: 70px;
+    }
+    
+    .hero {
+        min-height: 70vh;
+    }
+    
+    .display-4 {
+        font-size: 2.5rem;
+    }
+}
