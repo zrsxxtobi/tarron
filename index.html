@@ -3,143 +3,156 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Elegance | Premium Clothing Brand</title>
-    <!-- Bootstrap 5 CSS -->
+    <title>Tarron | Premium Clothing Brand</title>
+    <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Custom CSS -->
-    <link href="style.css" rel="stylesheet">
     <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Navigation Bar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top py-3">
         <div class="container">
-            <a class="navbar-brand" href="index.html">Elegance</a>
+            <a class="navbar-brand fs-2 fw-light" href="index.html">TARRON</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link active" href="index.html">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="services.html">Services</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="gallery.html">Gallery</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="contact.html">Contact</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="login.html">Login</a>
-                    </li>
+                    <li class="nav-item"><a class="nav-link" href="boys.html">Boys</a></li>
+                    <li class="nav-item"><a class="nav-link" href="girls.html">Girls</a></li>
+                    <li class="nav-item"><a class="nav-link" href="accessories.html">Accessories</a></li>
+                    <li class="nav-item"><a class="nav-link" href="login.html">login</a></li>
                 </ul>
+                <div class="social-icons ms-lg-4 mt-3 mt-lg-0">
+                    <a href="#" class="text-dark mx-2"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="text-dark mx-2"><i class="fab fa-tiktok"></i></a>
+                    <a href="#" class="text-dark mx-2"><i class="fab fa-youtube"></i></a>
+                    <a href="#" class="text-dark mx-2"><i class="fab fa-facebook-f"></i></a>
+                </div>
             </div>
         </div>
     </nav>
 
-    <!-- Hero Section -->
-    <header class="hero-section">
-        <div class="container h-100">
-            <div class="row h-100 align-items-center">
-                <div class="col-lg-6">
-                    <h1 class="display-4 fw-bold text-white">Elevate Your Style</h1>
-                    <p class="lead text-white">Discover premium quality clothing that combines comfort with elegance.</p>
-                    <a href="gallery.html" class="btn btn-primary btn-lg">Shop Now</a>
-                </div>
-            </div>
-        </div>
-    </header>
-
-    <!-- About Section -->
-    <section class="py-5">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-6">
-                    <img src="https://images.pexels.com/photos/974911/pexels-photo-974911.jpeg" alt="About Us" class="img-fluid rounded">
-                </div>
-                <div class="col-lg-6">
-                    <h2 class="fw-bold mb-4">About Elegance</h2>
-                    <p>Welcome to Elegance, where fashion meets comfort. Our brand is dedicated to providing high-quality clothing that doesn't compromise on style or sustainability.</p>
-                    <p>Founded in 2010, we've grown from a small boutique to an internationally recognized brand, all while maintaining our commitment to ethical production practices and timeless designs.</p>
-                    <p>Every piece in our collection is carefully crafted to ensure you look and feel your best, no matter the occasion.</p>
+    <!-- Hero Section with Image -->
+    <section class="hero-section">
+        <div class="hero-image-container">
+            <img src="hero.jpg" alt="Tarron Clothing Collection" class="img-fluid w-100 hero-image">
+            <div class="hero-overlay d-flex align-items-center">
+                <div class="container">
+                    <div class="hero-text">
+                        <h1 class="display-4 fw-light mb-3">Embroidered Elegance</h1>
+                        <p class="lead mb-4">Handcrafted clothing with delicate embroidery and soft color palettes</p>
+                        <a href="#featured" class="btn btn-outline-light rounded-0 px-4 py-2">Discover More</a>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Featured Products -->
-    <section class="py-5 bg-light">
+    <!-- Three Images Row -->
+    <section id="featured" class="three-images-section py-5">
         <div class="container">
-            <h2 class="text-center mb-5 fw-bold">Featured Collections</h2>
+            <div class="row g-3">
+                <div class="col-md-4">
+                    <div class="image-card">
+                        <img src="spring.jpg" alt="Featured Collection 1" class="img-fluid w-100">
+                        <div class="image-caption">
+                            <h3 class="h5">Spring Collection</h3>
+                            <a href="girls.html" class="stretched-link"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="image-card">
+                        <img src="summer.jpg" alt="Featured Collection 2" class="img-fluid w-100">
+                        <div class="image-caption">
+                            <h3 class="h5">Summer Essentials</h3>
+                            <a href="boys.html" class="stretched-link"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="image-card">
+                        <img src="acchero.jpg" alt="Featured Collection 3" class="img-fluid w-100">
+                        <div class="image-caption">
+                            <h3 class="h5">New Accessories</h3>
+                            <a href="accessories.html" class="stretched-link"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Collections Section -->
+    <section class="collections-section py-5 bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center mb-5">
+                    <h2 class="fw-light">Our Collections</h2>
+                    <p class="text-muted">Explore our premium clothing lines</p>
+                </div>
+            </div>
             <div class="row g-4">
                 <div class="col-md-4">
-                    <div class="card product-card h-100">
-                        <img src="https://images.pexels.com/photos/5886041/pexels-photo-5886041.jpeg" class="card-img-top" alt="Men's Collection">
-                        <div class="card-body">
-                            <h5 class="card-title">Men's Collection</h5>
-                            <p class="card-text">Sophisticated styles for the modern gentleman.</p>
+                    <a href="boys.html" class="text-decoration-none text-dark">
+                        <div class="collection-card">
+                            <img src="boy3.jpg" alt="Boys Collection" class="img-fluid w-100">
+                            <div class="p-3 text-center">
+                                <h3 class="h5">Boys</h3>
+                            </div>
                         </div>
-                    </div>
+                    </a>
                 </div>
                 <div class="col-md-4">
-                    <div class="card product-card h-100">
-                        <img src="https://images.pexels.com/photos/1021693/pexels-photo-1021693.jpeg" class="card-img-top" alt="Women's Collection">
-                        <div class="card-body">
-                            <h5 class="card-title">Women's Collection</h5>
-                            <p class="card-text">Elegant designs for every occasion.</p>
+                    <a href="girls.html" class="text-decoration-none text-dark">
+                        <div class="collection-card">
+                            <img src="img1.webp" alt="Girls Collection" class="img-fluid w-100">
+                            <div class="p-3 text-center">
+                                <h3 class="h5">Girls</h3>
+                            </div>
                         </div>
-                    </div>
+                    </a>
                 </div>
                 <div class="col-md-4">
-                    <div class="card product-card h-100">
-                        <img src="https://images.pexels.com/photos/1598507/pexels-photo-1598507.jpeg" class="card-img-top" alt="Accessories">
-                        <div class="card-body">
-                            <h5 class="card-title">Accessories</h5>
-                            <p class="card-text">Complete your look with our premium accessories.</p>
+                    <a href="accessories.html" class="text-decoration-none text-dark">
+                        <div class="collection-card">
+                            <img src="acc1.jpg" alt="Accessories" class="img-fluid w-100">
+                            <div class="p-3 text-center">
+                                <h3 class="h5">Accessories</h3>
+                            </div>
                         </div>
-                    </div>
+                    </a>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Footer -->
-    <footer class="bg-dark text-white py-4">
+    <!-- Contact Section -->
+    <section id="contact" class="py-5">
         <div class="container">
-            <div class="row">
-                <div class="col-md-4">
-                    <h5>Elegance</h5>
-                    <p>Premium clothing for the modern individual.</p>
-                </div>
-                <div class="col-md-4">
-                    <h5>Quick Links</h5>
-                    <ul class="list-unstyled">
-                        <li><a href="index.html" class="text-white">Home</a></li>
-                        <li><a href="services.html" class="text-white">Services</a></li>
-                        <li><a href="gallery.html" class="text-white">Gallery</a></li>
-                        <li><a href="contact.html" class="text-white">Contact</a></li>
-                    </ul>
-                </div>
-                <div class="col-md-4">
-                    <h5>Connect With Us</h5>
-                    <a href="#" class="text-white me-2"><i class="fab fa-facebook-f"></i></a>
-                    <a href="#" class="text-white me-2"><i class="fab fa-twitter"></i></a>
-                    <a href="#" class="text-white me-2"><i class="fab fa-instagram"></i></a>
-                    <a href="#" class="text-white"><i class="fab fa-pinterest"></i></a>
-                </div>
-            </div>
-            <hr>
-            <div class="text-center">
-                <p class="mb-0">&copy; 2023 Elegance. All rights reserved.</p>
-            </div>
-        </div>
-    </footer>
-
-    <!-- Bootstrap 5 JS Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-</body>
-</html>
+            <div class="row justify-content-center">
+                <div class="col-lg-8 text-center">
+                    <h2 class="fw-light mb-4">Contact Us</h2>
+                    <p class="mb-5">Have questions about our collections or need assistance? Reach out to our team.</p>
+                    
+                    <div class="row g-4">
+                        <div class="col-md-4">
+                            <i class="fas fa-envelope fs-4 mb-3"></i>
+                            <p>hello@tarron.com</p>
+                        </div>
+                        <div class="col-md-4">
+                            <i class="fas fa-phone fs-4 mb-3"></i>
+                            <p>+1 (555) 123-4567</p>
+                        </div>
+                        <div class="col-md-4">
+                            <i class="fas fa-map-marker-alt fs-4 mb-3"></i>
+                            <p>123 Fashion Ave, New York</p>
+                        </div>
+                    </div>
+                    
+                    <div class="mt-5">
+                        <a href="#" class="text-dark mx-3"><i class="fab fa-instagram fs-4"></i></a>
