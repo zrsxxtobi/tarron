@@ -1,97 +1,233 @@
-/* Custom Styles */
-:root {
-    --bs-body-font-family: 'Helvetica Neue', Arial, sans-serif;
-}
-
+/* General Styles */
 body {
-    padding-top: 80px;
-    background-color: #f0f0f0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding-top: 56px;
     color: #333;
+    background-color: #f8f9fa;
 }
 
-/* Navigation */
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 600;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Navbar Styles */
 .navbar {
-    border-bottom: 1px solid #f0f0f0;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
 .navbar-brand {
-    letter-spacing: 1px;
+    font-weight: 700;
+    font-size: 1.5rem;
+    color: #6c757d;
 }
 
 .nav-link {
-    padding: 0.5rem 1rem;
-    font-weight: 300;
-    letter-spacing: 0.5px;
+    font-weight: 500;
 }
 
 /* Hero Section */
-.hero {
-    background-color: #f9f9f9;
-    background-image: url('https://via.placeholder.com/2000x1000');
+.hero-section {
+    background: linear-gradient(rgba(108, 117, 125, 0.7), rgba(108, 117, 125, 0.7)), 
+                url('https://images.pexels.com/photos/325876/pexels-photo-325876.jpeg');
     background-size: cover;
     background-position: center;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+}
+
+/* Services Header */
+.services-header {
+    background: linear-gradient(rgba(108, 117, 125, 0.7), rgba(108, 117, 125, 0.7)), 
+                url('https://images.pexels.com/photos/934070/pexels-photo-934070.jpeg');
+    background-size: cover;
+    background-position: center;
+}
+
+/* Gallery Header */
+.gallery-header {
+    background: linear-gradient(rgba(108, 117, 125, 0.7), rgba(108, 117, 125, 0.7)), 
+                url('https://images.pexels.com/photos/994517/pexels-photo-994517.jpeg');
+    background-size: cover;
+    background-position: center;
+}
+
+/* Contact Header */
+.contact-header {
+    background: linear-gradient(rgba(108, 117, 125, 0.7), rgba(108, 117, 125, 0.7)), 
+                url('https://images.pexels.com/photos/3178818/pexels-photo-3178818.jpeg');
+    background-size: cover;
+    background-position: center;
+}
+
+/* Login Section */
+.login-section {
+    background: linear-gradient(rgba(248, 249, 250, 0.9), rgba(248, 249, 250, 0.9)), 
+                url('https://images.pexels.com/photos/934070/pexels-photo-934070.jpeg');
+    background-size: cover;
+    background-position: center;
+}
+
+/* Register Section */
+.register-section {
+    background: linear-gradient(rgba(248, 249, 250, 0.9), rgba(248, 249, 250, 0.9)), 
+                url('https://images.pexels.com/photos/994517/pexels-photo-994517.jpeg');
+    background-size: cover;
+    background-position: center;
+}
+
+/* Card Styles */
+.card {
+    border: none;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.product-card img {
+    height: 250px;
+    object-fit: cover;
+}
+
+.service-card {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 20px;
+}
+
+.service-icon {
+    color: #6c757d;
+    font-size: 2.5rem;
+}
+
+.pricing-card {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.pricing-card .card-header {
+    border-radius: 10px 10px 0 0 !important;
+}
+
+.login-card, .register-card {
+    border-radius: 15px;
+}
+
+/* Gallery Styles */
+.gallery-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.gallery-item img {
+    transition: transform 0.3s;
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.gallery-item:hover img {
+    transform: scale(1.05);
+}
+
+.gallery-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(108, 117, 125, 0.7);
+    opacity: 0;
+    transition: opacity 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.gallery-item:hover .gallery-overlay {
+    opacity: 1;
+}
+
+.overlay-content {
+    text-align: center;
+    color: white;
 }
 
 /* Collection Cards */
-.collection-card {
-    transition: transform 0.3s ease;
-}
-
-.collection-card:hover {
-    transform: translateY(-5px);
-}
-
 .collection-card img {
-    transition: opacity 0.3s ease;
+    height: 200px;
+    object-fit: cover;
+    transition: transform 0.3s;
 }
 
 .collection-card:hover img {
-    opacity: 0.9;
+    transform: scale(1.05);
 }
 
-/* Product Cards */
-.product-card {
-    border: 1px solid pink;
-    transition: all 0.3s ease;
+/* Form Styles */
+.form-control {
+    padding: 10px 15px;
+    border-radius: 8px;
+    border: 1px solid #ced4da;
 }
 
-.product-card:hover {
-    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+.form-control:focus {
+    box-shadow: 0 0 0 0.25rem rgba(108, 117, 125, 0.25);
+    border-color: #6c757d;
 }
 
-/* Collection Header */
-.collection-header {
-    background-color: #f9f9f9;
-    background-image: url('https://via.placeholder.com/2000x800');
-    background-size: cover;
-    background-position: center;
-    padding-bottom: 60px;
+.btn {
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-weight: 500;
+    transition: all 0.3s;
 }
 
-/* Text Styles */
-.display-4, .display-5 {
-    font-weight: 300;
-    letter-spacing: 1px;
+.btn-primary {
+    background-color: #6c757d;
+    border-color: #6c757d;
 }
 
-/* Buttons */
-.btn-outline-dark {
-    border-width: 2px;
-    letter-spacing: 1px;
-    padding: 8px 24px;
+.btn-primary:hover {
+    background-color: #5a6268;
+    border-color: #545b62;
+}
+
+.btn-outline-primary {
+    color: #6c757d;
+    border-color: #6c757d;
+}
+
+.btn-outline-primary:hover {
+    background-color: #6c757d;
+    color: white;
+}
+
+/* Contact Info */
+.contact-info i {
+    margin-top: 5px;
 }
 
 /* Responsive Adjustments */
 @media (max-width: 768px) {
-    body {
-        padding-top: 70px;
+    .hero-section {
+        height: 60vh;
     }
     
-    .hero {
-        min-height: 70vh;
-    }
-    
-    .display-4 {
+    .hero-section h1 {
         font-size: 2.5rem;
+    }
+    
+    .navbar-brand {
+        font-size: 1.25rem;
     }
 }
